@@ -10,11 +10,11 @@ export const App = () => {
 
   return (
     <div>
-      <p>fixed</p>
+      <p>broken</p>
       <input placeholder={"Your name"} onInput={e => setName(e.currentTarget.value)}/>
       <button onClick={onSubmit}>Show my name</button>
 
-      {!!result && <p>Your name is {result}</p>}
+      {!!result && <p>Your name is result</p>}
     </div>
   );
 };
