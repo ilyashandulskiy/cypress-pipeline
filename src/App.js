@@ -10,6 +10,7 @@ export const App = () => {
 
   return (
     <div>
+      <p>broken</p>
       <input placeholder={"Your name"} onInput={e => setName(e.currentTarget.value)}/>
       <button onClick={onSubmit}>Show my name</button>
 
