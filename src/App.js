@@ -10,11 +10,11 @@ export const App = () => {
 
   return (
     <div>
-      <p>fixed again</p>
-      <input placeholder={"Your name"} onInput={e => setName(e.currentTarget.value)}/>
-      <button onClick={onSubmit}>Show my name</button>
+      <p data-testid={"title"}>fixed again</p>
+      <input data-testid={"nameInput"} placeholder={"Your name"} onInput={e => setName(e.currentTarget.value)}/>
+      <button data-testid={"submitButton"} onClick={onSubmit}>Show my name</button>
 
-      {!!result && <p>Your name is {result}</p>}
+      {!!result && <p data-testid={"resultText"}>Your name is {result}</p>}
     </div>
   );
 };
